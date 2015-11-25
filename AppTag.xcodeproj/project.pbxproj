@@ -16,6 +16,8 @@
 		1763C9E01C05C2A10044BAA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1763C9DE1C05C2A10044BAA8 /* LaunchScreen.storyboard */; };
 		1763C9EB1C05C2A10044BAA8 /* AppTagTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1763C9EA1C05C2A10044BAA8 /* AppTagTests.m */; };
 		1763C9F61C05C2A10044BAA8 /* AppTagUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1763C9F51C05C2A10044BAA8 /* AppTagUITests.m */; };
+		1763CA0F1C05CD8D0044BAA8 /* AMTagListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1763CA0C1C05CD8D0044BAA8 /* AMTagListView.m */; };
+		1763CA101C05CD8D0044BAA8 /* AMTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1763CA0E1C05CD8D0044BAA8 /* AMTagView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		1763C9F11C05C2A10044BAA8 /* AppTagUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTagUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1763C9F51C05C2A10044BAA8 /* AppTagUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppTagUITests.m; sourceTree = "<group>"; };
 		1763C9F71C05C2A10044BAA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1763CA0B1C05CD8D0044BAA8 /* AMTagListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTagListView.h; sourceTree = "<group>"; };
+		1763CA0C1C05CD8D0044BAA8 /* AMTagListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTagListView.m; sourceTree = "<group>"; };
+		1763CA0D1C05CD8D0044BAA8 /* AMTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTagView.h; sourceTree = "<group>"; };
+		1763CA0E1C05CD8D0044BAA8 /* AMTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTagView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 		1763C9CC1C05C2A10044BAA8 /* AppTag */ = {
 			isa = PBXGroup;
 			children = (
+				1763CA0A1C05CD8D0044BAA8 /* AMTagListView */,
 				1763C9D01C05C2A10044BAA8 /* AppDelegate.h */,
 				1763C9D11C05C2A10044BAA8 /* AppDelegate.m */,
 				1763C9D31C05C2A10044BAA8 /* ViewController.h */,
@@ -141,6 +148,17 @@
 				1763C9F71C05C2A10044BAA8 /* Info.plist */,
 			);
 			path = AppTagUITests;
+			sourceTree = "<group>";
+		};
+		1763CA0A1C05CD8D0044BAA8 /* AMTagListView */ = {
+			isa = PBXGroup;
+			children = (
+				1763CA0B1C05CD8D0044BAA8 /* AMTagListView.h */,
+				1763CA0C1C05CD8D0044BAA8 /* AMTagListView.m */,
+				1763CA0D1C05CD8D0044BAA8 /* AMTagView.h */,
+				1763CA0E1C05CD8D0044BAA8 /* AMTagView.m */,
+			);
+			path = AMTagListView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,10 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1763CA0F1C05CD8D0044BAA8 /* AMTagListView.m in Sources */,
 				1763C9DB1C05C2A10044BAA8 /* AppTag.xcdatamodeld in Sources */,
 				1763C9D51C05C2A10044BAA8 /* ViewController.m in Sources */,
 				1763C9D21C05C2A10044BAA8 /* AppDelegate.m in Sources */,
 				1763C9CF1C05C2A10044BAA8 /* main.m in Sources */,
+				1763CA101C05CD8D0044BAA8 /* AMTagView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
